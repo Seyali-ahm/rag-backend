@@ -28,28 +28,28 @@ class Pair(BaseModel):
     sentence: str
     translation: str
 
-
 @app.post("/pairs")
 def add_pair(pair: Pair):
     cursor.execute(
         "INSERT INTO pairs (source_lang, target_lang, sentence, translation) VALUES (?, ?, ?, ?)",
-        (pair.source_lang, pair.target_lang, pair.sentence, pair.translation)
+        (pair.source_language, pair.target_language, pair.sentence, pair.translation)
     )
     conn.commit()
     return {"status": "ok"}
 
+
 @app.get("/prompt")
-def get_prompt(source_lang: str, target_lang: str, sentence: str):
+def get_prompt(source_language: str, target_language: str, query_sentence: str):
     cursor.execute(
         "SELECT sentence, translation FROM pairs WHERE source_lang=? AND target_lang=?",
-        (source_lang, target_lang)
+        (source_language, target_language)
     )
     rows = cursor.fetchall()
 
     if not rows:
-        return {"prompt": f"Translate from {source_lang} to {target_lang}: {sentence}"}
+        return {"prompt": f"Translate from {source_language} to {target_language}: {query_sentence}"}
 
-    corpus = [sentence] + [row[0] for row in rows]
+    corpus = [query_sentence] + [row[0] for row in rows]
     vectorizer = TfidfVectorizer().fit(corpus)
     vectors = vectorizer.transform(corpus)
     sims = cosine_similarity(vectors[0:1], vectors[1:]).flatten()
@@ -63,8 +63,8 @@ def get_prompt(source_lang: str, target_lang: str, sentence: str):
         examples.append(f"Source: {src}\nTarget: {tgt}")
 
     prompt = (
-        f"Translate from {source_lang} to {target_lang}:\n"
-        f"Input: {sentence}\n\n"
+        f"Translate from {source_language} to {target_language}:\n"
+        f"Input: {query_sentence}\n\n"
         f"Examples:\n\n" + "\n\n".join(examples)
     )
 
