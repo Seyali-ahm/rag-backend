@@ -320,3 +320,32 @@ Translate from it to en: Che ore sono?
 
 Line 18: Received Translation Prompt.
 Translate from it to en: Ci vediamo
+
+
+
+Enter choice (1-4): 3
+
+
+Line 1: Response -> No (Expected: No)
+
+Line 2: Response -> No (Expected: No)
+
+Line 3: Response -> Yes (Expected: Yes)
+
+Line 4: Response -> No (Expected: No)
+
+Line 5: Response -> No (Expected: No)
+
+Line 6: Response -> No (Expected: No)
+
+Line 7: Response -> Yes (Expected: No)
+
+Line 8: Response -> Yes (Expected: No)
+
+Line 9: Response -> Yes (Expected: No)
+
+Line 10: Response -> Yes (Expected: Yes)
+
+Line 11: Response -> Yes (Expected: Yes)
+
+Line 12: Response -> Yes (Expected: Yes)

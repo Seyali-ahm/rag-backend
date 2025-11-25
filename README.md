@@ -14,8 +14,8 @@ This project was developed as part of the **Junior ML Engineer Technical Test** 
 - **Fully compatible with the provided `client.py` tool**
 - **SQLite** for persistence (auto-created on startup)
 - **Swagger UI** available at `/docs`
+- **Detect stammering** in translated sentences (`/stammering`)
 
-*(Advanced optional test feature `/stammering` can be added)*
 
 ---
 
@@ -138,8 +138,12 @@ Target: Ho sete.
 ```
 
 ### (Optional) ✔ Option 3 — Detect Stammering
+Loads from `stammering_tests.jsonl` and calls `/stammering` to evaluate if translation contains repetition.
+Line 1: Response -> No (Expected: No)
 
-Not implemented yet.
+Line 2: Response -> No (Expected: No)
+
+
 
 
 
