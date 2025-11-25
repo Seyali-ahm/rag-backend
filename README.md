@@ -31,7 +31,8 @@ rag-backend/
 ├── stammering_tests.jsonl     # (optional) stammering tests
 ├── test_result.txt           # Log of running client.py
 ├── requirements.txt           # Python dependencies
-└── README.md
+├── README.md
+└── screenshots                 # Contains screenshots of the app working
 ```
 
 ---
