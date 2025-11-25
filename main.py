@@ -4,6 +4,7 @@ import sqlite3
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from stammering import detect_stammering
 
 app = FastAPI(title="RAG Translation Backend")
 
@@ -69,3 +70,7 @@ def get_prompt(source_language: str, target_language: str, query_sentence: str):
     )
 
     return {"prompt": prompt}
+
+@app.get("/stammering")
+def stammering(source_sentence: str, translated_sentence: str):
+    return {"has_stammer": detect_stammering(source_sentence, translated_sentence)}
