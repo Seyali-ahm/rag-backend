@@ -1,0 +1,322 @@
+1. Database Population
+1 - Populate Database
+2 - Request Prompts
+3 - Detect Stammering
+4 - Exit
+Enter choice (1-4): 1
+Line 1: Added translation pair.
+Line 2: Added translation pair.
+Line 3: Added translation pair.
+Line 4: Added translation pair.
+Line 5: Added translation pair.
+Line 6: Added translation pair.
+Line 7: Added translation pair.
+Line 8: Added translation pair.
+Line 9: Added translation pair.
+Line 10: Added translation pair.
+Line 11: Added translation pair.
+Line 12: Added translation pair.
+Line 13: Added translation pair.
+Line 14: Added translation pair.
+Line 15: Added translation pair.
+Line 16: Added translation pair.
+Line 17: Added translation pair.
+Line 18: Added translation pair.
+Line 19: Added translation pair.
+Line 20: Added translation pair.
+
+
+Enter choice (1-4): 2
+Line 1: Received Translation Prompt.
+Translate from en to it:
+Input: Good night
+
+Examples:
+
+Source: Good morning!
+Target: Buongiorno!
+
+Source: Good evening!
+Target: Buonasera!
+
+Source: I'm thirsty.
+Target: Ho sete.
+
+Source: I'm hungry.
+Target: Ho fame.
+
+Line 2: Received Translation Prompt.
+Translate from en to it:
+Input: Good evening!
+
+Examples:
+
+Source: Good evening!
+Target: Buonasera!
+
+Source: Good morning!
+Target: Buongiorno!
+
+Source: I'm thirsty.
+Target: Ho sete.
+
+Source: I'm hungry.
+Target: Ho fame.
+
+Line 3: Received Translation Prompt.
+Translate from en to it:
+Input: How's the weather tomorrow?
+
+Examples:
+
+Source: How's the weather?
+Target: Com'è il tempo?
+
+Source: How's the weather today?
+Target: Com'è il tempo oggi?
+
+Source: See you tomorrow.
+Target: Ci vediamo domani.
+
+Source: Hello, how are you?
+Target: Ciao, come stai?
+
+Line 4: Received Translation Prompt.
+Translate from en to it:
+Input: How's your day?
+
+Examples:
+
+Source: What's your name?
+Target: Come ti chiami?
+
+Source: How's the weather?
+Target: Com'è il tempo?
+
+Source: Hello, how are you?
+Target: Ciao, come stai?
+
+Source: How's the weather today?
+Target: Com'è il tempo oggi?
+
+Line 5: Received Translation Prompt.
+Translate from en to it:
+Input: See you later, my friend.
+
+Examples:
+
+Source: See you later.
+Target: Ci vediamo dopo.
+
+Source: See you tomorrow.
+Target: Ci vediamo domani.
+
+Source: See you soon.
+Target: A presto.
+
+Source: Do you speak Italian?
+Target: Parli italiano?
+
+Line 6: Received Translation Prompt.
+Translate from en to it:
+Input: What's my name?
+
+Examples:
+
+Source: What's your name?
+Target: Come ti chiami?
+
+Source: What is the time?
+Target: Che ore sono?
+
+Source: What time is it?
+Target: Che ore sono?
+
+Source: I'm hungry.
+Target: Ho fame.
+
+Line 7: Received Translation Prompt.
+Translate from en to it:
+Input: What's your hometown?
+
+Examples:
+
+Source: What's your name?
+Target: Come ti chiami?
+
+Source: What is the time?
+Target: Che ore sono?
+
+Source: What time is it?
+Target: Che ore sono?
+
+Source: I'm hungry.
+Target: Ho fame.
+
+Line 8: Received Translation Prompt.
+Translate from en to it:
+Input: Where is the bus stop?
+
+Examples:
+
+Source: Where is the station?
+Target: Dov'è la stazione?
+
+Source: Where is the nearest station?
+Target: Dov'è la stazione più vicina?
+
+Source: What is the time?
+Target: Che ore sono?
+
+Source: Where are you from?
+Target: Di dove sei?
+
+Line 9: Received Translation Prompt.
+Translate from en to it:
+Input: I love pizza and I love italian food in general.
+
+Examples:
+
+Source: I love Italian food.
+Target: Amo il cibo italiano.
+
+Source: I love pizza.
+Target: Amo la pizza.
+
+Source: Do you speak Italian?
+Target: Parli italiano?
+
+Source: I'm thirsty.
+Target: Ho sete.
+
+Line 10: Received Translation Prompt.
+Translate from en to it:
+Input: I love music.
+
+Examples:
+
+Source: I love pizza.
+Target: Amo la pizza.
+
+Source: I love Italian food.
+Target: Amo il cibo italiano.
+
+Source: I'm thirsty.
+Target: Ho sete.
+
+Source: I'm hungry.
+Target: Ho fame.
+
+Line 11: Received Translation Prompt.
+Translate from en to it:
+Input: Do you understand Italian?
+
+Examples:
+
+Source: Do you speak Italian?
+Target: Parli italiano?
+
+Source: Do you speak English?
+Target: Parli inglese?
+
+Source: I love Italian food.
+Target: Amo il cibo italiano.
+
+Source: See you tomorrow.
+Target: Ci vediamo domani.
+
+Line 12: Received Translation Prompt.
+Translate from en to it:
+Input: Do you speak German or Italian?
+
+Examples:
+
+Source: Do you speak Italian?
+Target: Parli italiano?
+
+Source: Do you speak English?
+Target: Parli inglese?
+
+Source: I love Italian food.
+Target: Amo il cibo italiano.
+
+Source: See you tomorrow.
+Target: Ci vediamo domani.
+
+Line 13: Received Translation Prompt.
+Translate from en to it:
+Input: What time does the train leave?
+
+Examples:
+
+Source: What is the time?
+Target: Che ore sono?
+
+Source: What time is it?
+Target: Che ore sono?
+
+Source: What's your name?
+Target: Come ti chiami?
+
+Source: How's the weather?
+Target: Com'è il tempo?
+
+Line 14: Received Translation Prompt.
+Translate from en to it:
+Input: I'm feeling hungry now.
+
+Examples:
+
+Source: I'm hungry.
+Target: Ho fame.
+
+Source: I'm thirsty.
+Target: Ho sete.
+
+Source: What is the time?
+Target: Che ore sono?
+
+Source: What time is it?
+Target: Che ore sono?
+
+Line 15: Received Translation Prompt.
+Translate from en to it:
+Input: Is there a library nearby?
+
+Examples:
+
+Source: What is the time?
+Target: Che ore sono?
+
+Source: Where is the station?
+Target: Dov'è la stazione?
+
+Source: What time is it?
+Target: Che ore sono?
+
+Source: Where is the nearest station?
+Target: Dov'è la stazione più vicina?
+
+Line 16: Received Translation Prompt.
+Translate from en to it:
+Input: Can you help me find the park?
+
+Examples:
+
+Source: How's the weather?
+Target: Com'è il tempo?
+
+Source: What is the time?
+Target: Che ore sono?
+
+Source: Where is the station?
+Target: Dov'è la stazione?
+
+Source: How's the weather today?
+Target: Com'è il tempo oggi?
+
+Line 17: Received Translation Prompt.
+Translate from it to en: Che ore sono?
+
+Line 18: Received Translation Prompt.
+Translate from it to en: Ci vediamo
