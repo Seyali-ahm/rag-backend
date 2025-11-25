@@ -23,10 +23,11 @@ cursor.execute("""
 conn.commit()
 
 class Pair(BaseModel):
-    source_lang: str
-    target_lang: str
+    source_language: str
+    target_language: str
     sentence: str
     translation: str
+
 
 @app.post("/pairs")
 def add_pair(pair: Pair):
