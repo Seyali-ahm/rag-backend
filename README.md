@@ -24,6 +24,7 @@ This project was developed as part of the **Junior ML Engineer Technical Test** 
 ```
 rag-backend/
 ├── main.py                    # FastAPI application
+├── Dockerfile                 #Dockerfile  
 ├── client.py                  # Provided test script
 ├── translation_pairs.jsonl    # Input pairs for DB population
 ├── translation_requests.jsonl # Input requests for prompt generation
@@ -144,6 +145,24 @@ Line 1: Response -> No (Expected: No)
 Line 2: Response -> No (Expected: No)
 
 
+## 🐳 Running with Docker (Optional)
+
+### 1. Build the image
+```bash
+docker build -t rag-backend .
+```
+
+### 2. Run the container
+```bash
+docker run -p 8000:8000 rag-backend
+```
+
+Access inside your browser:
+
+- http://localhost:8000  
+- http://localhost:8000/docs  
+
+---
 
 
 
