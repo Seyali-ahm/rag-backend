@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
 import sqlite3
 
 app = FastAPI(title="RAG Translation Backend")
@@ -17,6 +18,17 @@ cursor.execute("""
 """)
 conn.commit()
 
-@app.get("/")
-def root():
-    return {"db": "initialized"}
+class Pair(BaseModel):
+    source_lang: str
+    target_lang: str
+    sentence: str
+    translation: str
+
+@app.post("/pairs")
+def add_pair(pair: Pair):
+    cursor.execute(
+        "Insert into pairs (source_lang, target_lang, sentence, translation) VALUES (?, ?, ?, ?)",
+        (pair.source_lang, pair.target_lang, pair.sentence, pair.translation)
+    )
+    conn.commit()
+    return {"status": "ok"}
